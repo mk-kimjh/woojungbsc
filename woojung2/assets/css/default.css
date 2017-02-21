@@ -1,0 +1,260 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html, body {
+  position: relative;
+  min-width: 1230px;
+  font-family: 'Noto Sans KR', sans-serif; }
+
+.container {
+  width: 1230px; }
+
+.container-fluid {
+  min-width: 1230px; }
+
+p {
+  margin: 0; }
+
+#nav {
+  position: relative;
+  z-index: 1;
+  height: 30px;
+  background-color: #282828; }
+
+#header {
+  position: relative;
+  height: 923px;
+  /*
+  background-image: url(/woojung2/assets/images/img_visual.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  */ }
+  #header .cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/woojung2/assets/images/img_sky.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    -webkit-transition: all 40s linear;
+    transition: all 40s linear; }
+    #header .cloud.move {
+      background-position: 100% 0%; }
+  #header .building {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/woojung2/assets/images/img_bd.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
+  #header .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); }
+  #header .gnb {
+    position: relative;
+    z-index: 1;
+    margin-top: 30px; }
+  #header .slogan {
+    position: relative;
+    z-index: 1;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 685px;
+    height: 460px;
+    background-color: rgba(0, 0, 0, 0.75); }
+    #header .slogan .text {
+      padding-top: 50px;
+      color: #fff;
+      text-align: center; }
+      #header .slogan .text h2 {
+        font-family: 'Titillium Web', sans-serif;
+        font-weight: 100;
+        font-size: 55px;
+        line-height: 60px;
+        letter-spacing: 10px;
+        opacity: 0;
+        -webkit-transition: all .5s;
+        transition: all .5s; }
+      #header .slogan .text hr {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 0;
+        border-top: 1px solid #fff;
+        -webkit-transition: all .5s .5s;
+        transition: all .5s .5s; }
+      #header .slogan .text p {
+        font-size: 16px;
+        line-height: 30px;
+        opacity: 0;
+        -webkit-transition: all .5s 1s;
+        transition: all .5s 1s; }
+    #header .slogan .bar {
+      position: absolute;
+      top: 400px;
+      left: 50%;
+      height: 1px;
+      width: 320px;
+      margin-left: -160px; }
+      #header .slogan .bar .dot {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -4px;
+        margin-left: -3px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #fff;
+        -webkit-transition: all .5s 4s;
+        transition: all .5s 4s;
+        opacity: 0; }
+      #header .slogan .bar .left {
+        position: absolute;
+        top: 0;
+        right: 170px;
+        width: 0;
+        height: 1px;
+        background-color: #e40009;
+        -webkit-transition: all 1s 4.5s;
+        transition: all 1s 4.5s; }
+      #header .slogan .bar .right {
+        position: absolute;
+        top: 0;
+        left: 170px;
+        width: 0;
+        height: 1px;
+        background-color: #f0840c;
+        -webkit-transition: all 1s 4.5s;
+        transition: all 1s 4.5s; }
+    #header .slogan.on .text h2 {
+      opacity: 1; }
+    #header .slogan.on .text hr {
+      width: 70px; }
+    #header .slogan.on .text p {
+      opacity: 1; }
+    #header .slogan.on .bar .dot {
+      opacity: 1; }
+    #header .slogan.on .bar .left {
+      width: 150px; }
+    #header .slogan.on .bar .right {
+      width: 150px; }
+
+#business {
+  padding-top: 90px;
+  height: 970px;
+  background-image: url(/woojung2/assets/images/bg_business.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover; }
+  #business > p {
+    text-align: center; }
+  #business > ul {
+    margin: 90px auto 0;
+    width: 1670px;
+    height: 500px;
+    list-style: none; }
+    #business > ul > li {
+      float: left;
+      margin-left: 35px;
+      width: 370px;
+      height: 500px;
+      cursor: pointer;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+      #business > ul > li img {
+        opacity: 0;
+        -webkit-transition: all .3s;
+        transition: all .3s; }
+      #business > ul > li:nth-of-type(1) {
+        margin-left: 0;
+        background-image: url(/woojung2/assets/images/img_business_item_1.gif); }
+      #business > ul > li:nth-of-type(2) {
+        background-image: url(/woojung2/assets/images/img_business_item_2.gif); }
+      #business > ul > li:nth-of-type(3) {
+        background-image: url(/woojung2/assets/images/img_business_item_3.gif); }
+      #business > ul > li:nth-of-type(4) {
+        background-image: url(/woojung2/assets/images/img_business_item_4.gif); }
+      #business > ul > li:hover {
+        -ms-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        #business > ul > li:hover img {
+          opacity: 1; }
+
+#rnd {
+  height: 970px; }
+  #rnd .figure {
+    position: relative;
+    height: 970px;
+    background-image: url(/woojung2/assets/images/bg_rnd.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover; }
+    #rnd .figure .prev {
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+  #rnd .details {
+    overflow: hidden;
+    position: relative;
+    height: 970px;
+    background-color: #17191d; }
+    #rnd .details .text {
+      margin-top: 125px;
+      margin-left: 60px; }
+    #rnd .details .next {
+      position: absolute;
+      left: 0;
+      bottom: 0; }
+
+#news {
+  height: 970px;
+  background-color: #f4f7ff; }
+  #news p {
+    margin-top: 85px; }
+
+#only {
+  height: 480px;
+  background-image: url(/woojung2/assets/images/bg_only.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed; }
+  #only p {
+    margin-top: 140px;
+    text-align: center; }
+
+#comm {
+  height: 490px;
+  background-color: #fff; }
+  #comm p {
+    margin-top: 80px;
+    text-align: center; }
+
+#foot-nav {
+  height: 295px;
+  background-color: #f2f2f2; }
+  #foot-nav p {
+    margin-top: 60px;
+    text-align: center; }
+
+#copy {
+  height: 80px;
+  background-color: #252525; }
+  #copy p {
+    margin-top: 18px;
+    text-align: center; }
+
+/*# sourceMappingURL=default.css.map */
